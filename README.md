@@ -9,3 +9,4 @@
 
 ## 스프링 교과서 - 로렌티우 스필카 지음 | 정성권 옮김
 - Chapter 01. [현실 세계의 스프링](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20교과서/현실%20세계의%20스프링.md)
+- Chapter 02. [스프링 컨텍스트: 빈 정의](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20교과서/Chapter%2002.%20스프링%20컨텍스트%3A%20빈%20정의.md)

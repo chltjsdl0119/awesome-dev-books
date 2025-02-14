@@ -159,3 +159,34 @@ public class ProjectConfig {
     
 }
 ```
+
+### 2.2.3 프로그래밍 방식으로 스프링 컨텍스트에 빈 추가
+
+- 컨텍스트 인스턴스의 메서드를 호출하여 새 인스턴스를 직접 추가할 수 있다.(registerBean() 메서드를 통해 가능)
+
+```java
+// registerBean() 메서드로 스프링 컨텍스트에 빈 추가하기
+
+import java.util.function.Supplier;
+
+public class Main {
+
+    public static void main(String[] args) {
+        var context = new AnnotationConfigApplicationContext(ProjectConfig.class);
+
+        Parrot X = new Parrot();
+
+        Supplier<Parrot> parrotSupplier = () -> x;
+        
+        context.registerBean("parrot1", Parrot.class, parrotSupplier); // 스프링 컨텍스트에 인스턴스 추가
+    }
+}
+```
+
+## 2.3 요약
+
+- 스프링에서 가장 먼저 배워야할 것은 스프링 컨텍스트에 인스턴스를 추가하는 것이다.
+- 컨텍스트에 빈을 추가하는 방법은 세 가지다. @Bean 어노테이선, 스테레오타입 어노테이션, 프로그래밍 방식.
+- @Bean 어노테이션을 이용하면 어떤 종류의 인스턴스도 빈으로 추가할 수 있다.
+- 스테레오타입 어노테이션을 사용하면 특정 어노테이션이 있는 애플리케이션 클래스만을 위한 빈을 생성할 수 있다.
+- registerBean() 메서드는 스프링 5 이상에서만 사용할 수 있으며, 컨텍스트에 빈을 추가하는 로직을 재정의하여 구현할 수 있다.

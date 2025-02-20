@@ -12,3 +12,4 @@
 - Chapter 02. [스프링 컨텍스트: 빈 정의](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20교과서/Chapter%2002.%20스프링%20컨텍스트%3A%20빈%20정의.md)
 - Chapter 03. [스프링 컨텍스트: 빈 작성](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20교과서/Chapter%2003.%20스프링%20컨텍스트%3A%20빈%20작성.md)
 - Chapter 04. [스프링 컨텍스트: 추상화](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20교과서/Chapter%2004.%20스프링%20컨텍스트%3A%20추상화.md)
+- Chapter 05. [스프링 컨텍스트: 빈의 스코프 및 수명주기](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20교과서/Chapter%2005.%20스프링%20컨텍스트%3A%20빈의%20스코프%20및%20수명%20주기.md)

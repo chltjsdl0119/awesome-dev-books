@@ -15,3 +15,4 @@
 - Chapter 05. [스프링 컨텍스트: 빈의 스코프 및 수명주기](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20교과서/Chapter%2005.%20스프링%20컨텍스트%3A%20빈의%20스코프%20및%20수명%20주기.md)
 - Chapter 06. [스프링 AOP로 애스펙트 사용](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20교과서/Chapter%2006.%20스프링%20AOP로%20애스펙트%20사용.md)
 - Chapter 07. [스프링 부트와 스프링 MVC 이해](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20교과서/Chapter%2007.%20스프링%20부트와%20스프링%20MVC%20이해.md)
+- Chapter 08. [스프링 부트와 스프링 MVC를 이용한 웹 앱 구현](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20교과서/Chapter%2008.%20스프링%20부트와%20스프링%20MVC를%20이용한%20웹%20앱%20구현.md)

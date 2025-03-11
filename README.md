@@ -16,3 +16,4 @@
 - Chapter 06. [스프링 AOP로 애스펙트 사용](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20교과서/Chapter%2006.%20스프링%20AOP로%20애스펙트%20사용.md)
 - Chapter 07. [스프링 부트와 스프링 MVC 이해](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20교과서/Chapter%2007.%20스프링%20부트와%20스프링%20MVC%20이해.md)
 - Chapter 08. [스프링 부트와 스프링 MVC를 이용한 웹 앱 구현](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20교과서/Chapter%2008.%20스프링%20부트와%20스프링%20MVC를%20이용한%20웹%20앱%20구현.md)
+- Chapter 09. [스프링 웹 스코프](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20교과서/Chapter%2009.%20스프링%20웹%20스코프.md) 

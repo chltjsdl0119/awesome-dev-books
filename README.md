@@ -18,3 +18,4 @@
 - Chapter 08. [스프링 부트와 스프링 MVC를 이용한 웹 앱 구현](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20교과서/Chapter%2008.%20스프링%20부트와%20스프링%20MVC를%20이용한%20웹%20앱%20구현.md)
 - Chapter 09. [스프링 웹 스코프](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20교과서/Chapter%2009.%20스프링%20웹%20스코프.md)
 - Chapter 10. [REST 서비스 구현](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20교과서/Chapter%2010.%20REST%20서비스%20구현.md)
+- Chapter 11. [REST 엔드포인트 사용](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20교과서/Chapter%2011.%20REST%20엔드포인트%20사용.md)

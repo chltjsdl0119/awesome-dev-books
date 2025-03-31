@@ -21,3 +21,4 @@
 - Chapter 11. [REST 엔드포인트 사용](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20교과서/Chapter%2011.%20REST%20엔드포인트%20사용.md)
 - Chapter 12. [스프링 앱에서 데이터 소스 사용](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20교과서/Chapter%2012.%20스프링%20앱에서%20데이터%20소스%20사용.md)
 - Chapter 13. [스프링 앱에서 트랜잭션 사용](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20교과서/Chapter%2013.%20스프링%20앱에서%20트랜잭션%20사용.md)
+- Chapter 14. [스프링 데이터로 데이터 영속성 구현](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20교과서/Chapter%2014.%20스프링%20데이터로%20데이터%20영속성%20구현.md)

@@ -20,6 +20,8 @@
 
 📌 **목차**  
 - Chapter 02. [안녕! 스프링 시큐리티](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20시큐리티%20인%20액션/Chapter%2002.%20안녕!%20스프링%20시큐리티.md)
+- Chapter 03. [사용자 관리](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20시큐리티%20인%20액션/Chapter%2003.%20사용자%20관리.md)
+- Chapter 04. [암호 처리](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20시큐리티%20인%20액션/Chapter%2004.%20암호%20처리.md)
 
 ---
 

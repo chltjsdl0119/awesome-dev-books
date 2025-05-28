@@ -20,6 +20,8 @@
 - Chapter 02. [안녕! 스프링 시큐리티](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20시큐리티%20인%20액션/Chapter%2002.%20안녕!%20스프링%20시큐리티.md)
 - Chapter 03. [사용자 관리](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20시큐리티%20인%20액션/Chapter%2003.%20사용자%20관리.md)
 - Chapter 04. [암호 처리](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20시큐리티%20인%20액션/Chapter%2004.%20암호%20처리.md)
+- Chapter 05. [인증 구현](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20시큐리티%20인%20액션/Chapter%2005.%20인증%20구현.md)
+- Chapter 06. [실전: 작고 안전한 웹 애플리케이션](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20시큐리티%20인%20액션/Chapter%2006.%20실전%3A%20작고%20안전한%20웹%20애플리케이션.md)
 
 ---
 

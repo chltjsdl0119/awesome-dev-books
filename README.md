@@ -23,6 +23,7 @@
 - Chapter 05. [인증 구현](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20시큐리티%20인%20액션/Chapter%2005.%20인증%20구현.md)
 - Chapter 06. [실전: 작고 안전한 웹 애플리케이션](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20시큐리티%20인%20액션/Chapter%2006.%20실전%3A%20작고%20안전한%20웹%20애플리케이션.md)
 - Chapter 07. [권한 부여 구성: 액세스 제한](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20시큐리티%20인%20액션/Chapter%2007.%20권한%20부여%20구성%3A%20액세스%20제한.md)
+- Chapter 08. [권한 부여 구성: 제한 적용](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20시큐리티%20인%20액션/Chapter%2008.%20권한%20부여%20구성%3A%20제한%20적용.md)
 
 ---
 

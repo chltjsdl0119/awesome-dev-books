@@ -40,8 +40,8 @@
 
 📌 **목차**  
 - Chapter 01. [들어가기](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/이펙티브%20자바/Chapter%2001.%20들어가기.md)
-- Chapter 01. [객체 생성과 파괴](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/이펙티브%20자바/Chapter%2002.%20객체%20생성과%20파괴.md)
-- Chapter 01. [모든 객체의 공통 메서드](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/이펙티브%20자바/Chapter%2003.%20모든%20객체의%20공통%20메서드.md)
+- Chapter 02. [객체 생성과 파괴](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/이펙티브%20자바/Chapter%2002.%20객체%20생성과%20파괴.md)
+- Chapter 03. [모든 객체의 공통 메서드](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/이펙티브%20자바/Chapter%2003.%20모든%20객체의%20공통%20메서드.md)
 
 ## 📖 객체지향의 사실과 오해 – 조영호
 

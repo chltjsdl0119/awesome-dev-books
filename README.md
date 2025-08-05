@@ -58,6 +58,7 @@
 📌 **목차**  
 - Chapter 00. [프로그래밍 패러다임](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/오브젝트/Chapter%2000.%20프로그래밍%20패러다임.md)
 - Chapter 01. [객체, 설계](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/오브젝트/Chapter%2001.%20객체%2C%20설계.md)
+- Chapter 02. [객체지향 프로그래밍](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/오브젝트/Chapter%2002.%20객체지향%20프로그래밍.md)
 
 ---
 

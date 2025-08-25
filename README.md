@@ -5,7 +5,7 @@
 ## 📖 스프링 교과서 – 로렌티우 스필카
 
 📌 **목차**  
-- Chapter 01. [현실 세계의 스프링](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20교과서/현실%20세계의%20스프링.md)
+- Chapter 01. [현실 세계의 스프링](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20교과서/Chapter%2001.%20현실%20세계의%20스프링.md)
 - Chapter 02. [스프링 컨텍스트: 빈 정의](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20교과서/Chapter%2002.%20스프링%20컨텍스트%3A%20빈%20정의.md)
 - Chapter 03. [스프링 컨텍스트: 빈 작성](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20교과서/Chapter%2003.%20스프링%20컨텍스트%3A%20빈%20작성.md)
 - Chapter 04. [스프링 컨텍스트: 추상화](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20교과서/Chapter%2004.%20스프링%20컨텍스트%3A%20추상화.md)

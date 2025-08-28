@@ -185,16 +185,17 @@ public class AuthenticationProviderService implements AuthenticationProvider {
 #### formLogin을 인증 메서드로 구성
 - 현재 스프링 시큐리티 버전에 맞게 수정한 것입니다.
 ```java
-@Bean
+    @Bean
 public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
     http
-            .formLogin(httpSecurityFormLoginConfigurer -> {
-        httpSecurityFormLoginConfigurer.defaultSuccessUrl("/main", true);
-    });
+            .formLogin(form -> {
+                form.defaultSuccessUrl("/main", true);
+            });
 
-    http.authorizeHttpRequests(authorizationManagerRequestMatcherRegistry -> {
-        authorizationManagerRequestMatcherRegistry.anyRequest().authenticated();
-    });
+    http
+            .authorizeHttpRequests(auth -> {
+                auth.anyRequest().authenticated();
+            });
 
     return http.build();
 }

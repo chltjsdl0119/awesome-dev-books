@@ -12,31 +12,34 @@
 
 #### mvcMatchers() 메서드
 ```java
-    @Bean
-    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        http.authorizeRequests(authorizationManagerRequestMatcherRegistry -> {
-            authorizationManagerRequestMatcherRegistry
-                    .mvcMatchers("/hello").hasRole("ADMIN")
-                    .mvcMatchers("/ciao").hasRole("MANAGER");
-        });
+@Bean
+public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
 
-        return http.build();
-    }
+    http
+            .authorizeRequests(auth -> {
+                auth
+                        .mvcMatchers("/hello").hasRole("ADMIN")
+                        .mvcMatchers("/ciao").hasRole("MANAGER");
+            });
+
+    return http.build();
+}
 ```
 
 #### 나머지 엔드포인트에 인증되지 않은 접근 요청을 허용하도록 명시적으로 지정
 ```java
-    @Bean
-    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        http.authorizeRequests(authorizationManagerRequestMatcherRegistry -> {
-            authorizationManagerRequestMatcherRegistry
-                    .mvcMatchers("/hello").hasRole("ADMIN")
-                    .mvcMatchers("/ciao").hasRole("MANAGER")
-                    .anyRequest().permitAll();
-        });
+@Bean
+public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+    http
+            .authorizeRequests(auth -> {
+                auth
+                        .mvcMatchers("/hello").hasRole("ADMIN")
+                        .mvcMatchers("/ciao").hasRole("MANAGER")
+                        .anyRequest().permitAll();
+    });
 
-        return http.build();
-    }
+    return http.build();
+}
 ```
 
 - 종종 경로만이 아닌 HTTP 방식도 지정해야 한다.

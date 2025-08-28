@@ -11,9 +11,10 @@
 @Bean
 public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
     
-    http.authorizeHttpRequests(authorizationManagerRequestMatcherRegistry -> {
-        authorizationManagerRequestMatcherRegistry.anyRequest().hasAuthority("WRITE"); // 사용자가 엔드포인트에 접근하기 위한 조건 지정
-    });
+    http
+            .authorizeHttpRequests(auth -> {
+                auth.anyRequest().hasAuthority("WRITE"); // 사용자가 엔드포인트에 접근하기 위한 조건 지정
+            });
 
     return http.build();
 }
@@ -24,9 +25,10 @@ public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Excepti
 @Bean
 public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
     
-    http.authorizeHttpRequests(authorizationManagerRequestMatcherRegistry -> {
-        authorizationManagerRequestMatcherRegistry.anyRequest().hasAnyAuthority("WRITE", "READ");
-    });
+    http
+            .authorizeHttpRequests(auth -> {
+                auth.anyRequest().hasAnyAuthority("WRITE", "READ");
+            });
 
     return http.build();
 }
@@ -41,9 +43,11 @@ public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Excepti
 ```java
 @Bean
 public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-    http.authorizeHttpRequests(authorizationManagerRequestMatcherRegistry -> {
-        authorizationManagerRequestMatcherRegistry.anyRequest().hasRole("ADMIN"); // 역할을 선언할 때만 ROLE_ 접두사를 쓴다.
-    });
+    
+    http
+            .authorizeHttpRequests(auth -> {
+                auth.anyRequest().hasRole("ADMIN"); // 역할을 선언할 때만 ROLE_ 접두사를 쓴다.
+            });
 
     return http.build();
 }

@@ -191,3 +191,141 @@ public class Main {
     }
 }
 ```
+
+## 03-6 다중 조건 정렬 익히기
+
+- 자바에서는 Comparable과 Comparator 인터페이스를 사용하여 다중 조건 정렬을 구현할 수 있다.
+
+#### Comparable을 이용한 다중 조건 정렬
+```java
+public class Score implements Comparable<Score> {
+
+    int english;
+    int math;
+
+    public Score(int english, int math) {
+        this.english = english;
+        this.math = math;
+    }
+
+    @Override
+    public String toString() {
+        return "Score{" +
+                "english=" + english +
+                ", math=" + math +
+                '}';
+    }
+
+    @Override
+    public int compareTo(Score o) {
+        return 0;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+
+        List<Score> myArr = new ArrayList<>();
+
+        myArr.add(new Score(80, 100));
+        myArr.add(new Score(100, 50));
+        myArr.add(new Score(70, 100));
+        myArr.add(new Score(80, 90));
+
+        Collections.sort(myArr);
+
+        for (Score score : myArr) {
+            System.out.println(score);
+        }
+    }
+}
+
+// 출력
+// Score{english=100, math=50}
+// Score{english=80, math=100}
+// Score{english=80, math=90}
+// Score{english=70, math=100}
+```
+
+#### Comparator를 이용한 다중 조건 정렬
+```java
+class ScoreComparator implements Comparator<Score> {
+
+    @Override
+    public int compare(Score o1, Score o2) {
+        if (o1.math == o2.math)
+            return o2.english - o1.english;
+
+        return o2.math - o1.math;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+
+        List<Score> myArr = new ArrayList<>();
+
+        myArr.add(new Score(80, 100));
+        myArr.add(new Score(100, 50));
+        myArr.add(new Score(70, 100));
+        myArr.add(new Score(80, 90));
+
+        Collections.sort(myArr, new ScoreComparator());
+
+        for (Score score : myArr) {
+            System.out.println(score);
+        }
+    }
+}
+
+// 출력
+// Score{english=80, math=100}
+// Score{english=70, math=100}
+// Score{english=80, math=90}
+// Score{english=100, math=50}
+```
+
+> Comparable과 Comparator의 사용 방식과 유연성에는 다음과 같은 차이점이 있다.
+> - Comparable: 정렬 대상 클래스 내부. 한 클래스당 하나의 정렬 기준만 정의할 수 있음.
+> - Comparator: 클래스 외부 별도 정의. 한 클래스에 여러 개의 정렬 기준을 정의할 수 있음.
+
+## 03-7 이차원 ArrayList 사용하기
+
+```java
+class Edge {
+    int endNode;
+    int value;
+
+    public Edge(int endNode, int value) {
+        this.endNode = endNode;
+        this.value = value;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer tokenizer = new StringTokenizer(reader.readLine());
+
+        int N = Integer.parseInt(tokenizer.nextToken());
+        int E = Integer.parseInt(tokenizer.nextToken());
+
+        List<Edge> list[] = new ArrayList[N + 1];
+
+        for (int i = 0; i < E; i++) {
+            tokenizer = new StringTokenizer(reader.readLine());
+            int s = Integer.parseInt(tokenizer.nextToken());
+            int e = Integer.parseInt(tokenizer.nextToken());
+            int v = Integer.parseInt(tokenizer.nextToken());
+
+            list[s].add(new Edge(e, v));
+        }
+
+        for (int i = 0; i < list[1].size(); i++) {
+            Edge tmp = list[1].get(i);
+            int next = tmp.endNode;
+            int value = tmp.value;
+        }
+    }
+}
+```

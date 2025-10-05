@@ -40,7 +40,7 @@ public interface SecurityConfigurer<O, B extends SecurityBuilder<O>> {
 - WebSecurity는 HttpSecurity에서 생성한 SecurityFilterChain 빈 객체를 SecurityBuilder에 등록한다.
 - WebSecurity가 build() 메서드를 호출하면 SecurityBuilder에 등록된 SecurityFilterChain 빈 객체를 꺼내어 FilterChainProxy의 생성자에 전달한다.
 
-# DelegatingFilterProxy / FilterChainProxy
+## DelegatingFilterProxy / FilterChainProxy
 
 ### Filter
 

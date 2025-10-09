@@ -35,7 +35,7 @@
 - Chapter 08. [권한 부여 구성: 제한 적용](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20시큐리티%20인%20액션/Chapter%2008.%20권한%20부여%20구성%3A%20제한%20적용.md)
 - Chapter 09. [필터 구현](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20시큐리티%20인%20액션/Chapter%2009.%20필터%20구현.md)
 - Chapter 10. [CSRF 보호와 CORS 적용](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20시큐리티%20인%20액션/Chapter%2010.%20CSRF%20보호와%20CORS%20적용.md)
-- Chapter 11. [실전: 책임의 분리]([https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20시큐리티%20인%20액션/Chapter%2010.%20CSRF%20보호와%20CORS%20적용.md](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20시큐리티%20인%20액션/Chapter%2011.%20실전%3A%20책임의%20분리.md))
+- Chapter 11. [실전: 책임의 분리](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20시큐리티%20인%20액션/Chapter%2011.%20실전%3A%20책임의%20분리.md)
 - Chapter 12. [OAuth 2가 동작하는 방법](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/스프링%20시큐리티%20인%20액션/Chapter%2012.%20OAuth%202가%20동작하는%20방법.md)
 
 ---

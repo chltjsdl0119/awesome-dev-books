@@ -3,7 +3,6 @@
 ## 04-1 배열과 리스트
 
 ### 배열
-
 - 배열은 메모리의 연속 공간에 값이 채워져 있는 형태의 자료구조이다.
 
 > 배열의 특징
@@ -104,6 +103,57 @@ public class Main {
         }
 
         System.out.println((sum * 100.0) / (max * N));
+    }
+}
+```
+
+## 04-2 구간 합
+
+- 구간 합은 합 배열을 이용하여 시간 복잡도를 더 줄이기 휘해 사용하는 특수한 목적의 알고리즘이다.
+- 합 배열은 기존 배열을 전처리한 배열이라 생각하면 된다.
+- 합 배열을 미리 구해 놓으면 기존 배열의 일정 범위 합을 구하는 시간 복잡도가 O(N)에서 O(1)로 감소한다.
+
+### 문제 003 구간 합 구하기
+
+#### 1단계 문제 분석하기
+- 문제에서 수의 개수와 합을 구해야 하는 횟수는 최대 100,000이다.
+
+#### 2단계 손으로 풀어 보기
+
+#### 3단계 Pseudo code 작성하기
+
+#### 4단계 코드 구현하기
+```java
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        StringTokenizer tokenizer = new StringTokenizer(reader.readLine());
+
+        int N = Integer.parseInt(tokenizer.nextToken());
+        int M = Integer.parseInt(tokenizer.nextToken());
+
+        int[] arr = new int[N + 1];
+
+        tokenizer = new StringTokenizer(reader.readLine());
+
+        for (int i = 1; i <= N; i++) {
+            arr[i] = arr[i - 1] + Integer.parseInt(tokenizer.nextToken());
+        }
+
+        for (int q = 0; q < M; q++) {
+            tokenizer = new StringTokenizer(reader.readLine());
+
+            int i = Integer.parseInt(tokenizer.nextToken());
+            int j = Integer.parseInt(tokenizer.nextToken());
+
+            System.out.println(arr[j] - arr[i - 1]);
+        }
     }
 }
 ```

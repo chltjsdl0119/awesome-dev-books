@@ -51,3 +51,19 @@
 - 스프링 시큐리티는 AbstractAuthenticationProcessingFilter 클래스를 사용자의 자격 증명을 인증하는 기본 필터로 사용한다.
 - UsernamePasswordAuthenticationFilter는 AbstractAuthenticationProcessingFilter의 확장 클래스로 HttpServletRequest에서 제출된 사용자 이름과 암호를 추출하여 인증을 수행한다.
 - 인증 프로세스가 초기활될 때 로그인 페이지와 로그아웃 페이지 생성을 위 DefaultLoginPageGeneratingFilter와 DefaultLogoutPageGeneratingFilter가 초기화된다.
+
+## 기본 인증 - httpBasic()
+
+- HTTP는 액세스 제어와 인증을 위한 프레임워크를 제공하며 가장 일반적인 인증 방식은 "Basic" 인증 방식이다.
+- 클라이언트가 서버로 접속할 때 Base64로 인코딩된 사용자 이름과 비밀번호를 Authorization 헤더에 포함시켜 전송한다.
+
+### httpBasic() API
+
+- httpBasicConfigurer 설정 클래스를 통해 여러 API를 설정할 수 있다.
+- 내부적으로 BasicAuthenticationFilter를 생성되 기본 인증 방식의 인증 처리를 담당하게 된다.
+
+## 기본 인증 필터 - BasicAuthenticationFilter
+
+- 이 필터는 기본 인증 서비스를 제공하는 데 사용된다.
+- BasicAuthenticationFilterConverter를 사용하여 요청 헤더에 기술된 인증 정보 유효성을 체크하 Base64로 인코딩된 username과 password를 추출한다.
+- 세션을 사용하는 경우 매 요청마다 인증 과정을 거치지 않으나 세션을 사용하지 않는 경우 매 요청마다 인증 과정을 거치게 된다.

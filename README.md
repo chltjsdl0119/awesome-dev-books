@@ -85,3 +85,8 @@
 - Chapter 04. [자료구조](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/알고리즘%20코딩%20테스트/Chapter%2004.%20자료구조.md)
 
 ---
+
+## 📖 자바의 정석 4판
+
+📌 **목차**
+- Chapter 02. [변수](https://github.com/chltjsdl0119/awesome-dev-books/blob/main/자바의%20정석%204판/Chapter%2002.%20변수.md)

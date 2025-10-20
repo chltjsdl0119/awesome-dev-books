@@ -67,3 +67,21 @@
 - 이 필터는 기본 인증 서비스를 제공하는 데 사용된다.
 - BasicAuthenticationFilterConverter를 사용하여 요청 헤더에 기술된 인증 정보 유효성을 체크하 Base64로 인코딩된 username과 password를 추출한다.
 - 세션을 사용하는 경우 매 요청마다 인증 과정을 거치지 않으나 세션을 사용하지 않는 경우 매 요청마다 인증 과정을 거치게 된다.
+
+## 기억하기 인증 - rememberMe()
+
+### RememberMe 인증
+
+- 사용자가 웹 사이트나 애플리케이션에 로그인할 때 자동으로 인증 정보를 기억하는 기능이다.
+- UsernamePasswordAuthenticationFilter와 함께 사용되며, AbstractAuthenticationProcessingFilter의 확장 클래스인 RememberMeAuthenticationFilter 슈퍼 클래에서 혹은 구현된다.
+  - 인증 성공 시, RememberMeServices.loginSuccess()를 통해 RememberMe 토큰을 생성하 쿠키로 전달한다.
+  - 인증 실패 시, RememberMeServices.loginFail()를 통해 쿠키를 지운다.
+
+### 토큰 생성
+
+- 기본적으로 암호화된 토큰으로 생성 되어지며 브라우저에 쿠키를 보내고, 향후 세선에서 이 쿠키를 감지하여 자동 로그인이 이루어지는 방식으로 달성된다.
+
+### RememberMeServices 구현체
+
+- TokenBasedRememberMeServices - 쿠키 기반 토큰의 보안을 위해 해싱을 사용한다.
+- PersistentTokenBasedRememberMeServices - 생성된 토큰을 저장하기 위해 데이터베이스나 다른 영구 저장 매체를 사용한다.

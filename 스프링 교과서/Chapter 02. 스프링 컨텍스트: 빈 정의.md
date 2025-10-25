@@ -15,7 +15,7 @@
 > - 실행 가능한 아카이브에 앱 패키징
 
 > 새 프로젝트 생성 시 고려
-> - 그룸 ID(Group ID): 관련된 여러 프로젝트를 그룹화하는 데 사용
+> - 그룹 ID(Group ID): 관련된 여러 프로젝트를 그룹화하는 데 사용
 > - 아티팩트 ID(Artifact ID): 현재 애플리케이션 이름
 > - 버전(Version): 현재 구현 상태의 식별자
 
@@ -32,7 +32,6 @@
 
 ```java
 // 스프링 컨텍스트 인스턴스 생성
-
 public class Main {
     
     public static void main(String[] args) {
@@ -45,7 +44,6 @@ public class Main {
 
 ```java
 // @Bean 메서드 정의하기
-
 @Configuration
 public class ProjectConfig {
     
@@ -60,7 +58,6 @@ public class ProjectConfig {
 
 ```java
 // 정의된 구성 클래스를 기반으로 스프링 컨텍스트 초기화하기
-
 public class Main {
     
     public static void main(String[] args) {
@@ -75,7 +72,6 @@ public class Main {
 
 ```java
 // 타입으로 Parrot 인스턴스 참조하기
-
 public class Main {
     
     public static void main(String[] args) {
@@ -83,14 +79,12 @@ public class Main {
         
         Parrot p = context.getBean(Parrot.class); // Parrot 인스턴스가 여러 개일 경우 예외가 발생한다. 
         System.out.println(p.getName);
-        
     }
 }
 ```
 
 ```java
 // 식별자로 빈 참조하기
-
 public class Main {
     
     public static void main(String[] args) {
@@ -98,14 +92,12 @@ public class Main {
         
         Parrot p = context.getBean("Parrot2", Parrot.class); // 첫 번째 매개변수가 참조할 인스턴스 이름이다. 
         System.out.println(p.getName);
-        
     }
 }
 ```
 
 ```java
 // @Bean 어노테이션의 name 또는 value 속성 중 하나를 사용하여 빈의 이름 지정하기
-
 @Configuration
 public class ProjectConfig {
     
@@ -120,7 +112,6 @@ public class ProjectConfig {
 
 ```java
 // @Primary 어노테이션으로 기본 빈 지정
-
 @Configuration
 public class ProjectConfig {
     
@@ -141,7 +132,6 @@ public class ProjectConfig {
 
 ```java
 // Parrot 클래스에 대해 스테레오타입 어노테이션 사용하기
-
 @Component // 스프링은 이 클래스의 인스턴스를 생성하고 스프링 컨텍스트에 추가한다. 하지만 @ComponentScan 어노테이션으로 지정된 클래스를 검색하도록 지시해야 한다.
 public class Parrot {
     
@@ -152,7 +142,6 @@ public class Parrot {
 
 ```java
 // @ComponentScan 어노테이션으로 스프링이 검색할 위치 지정하기
-
 @Configuration
 @ComponentScan(basePackages = "main") // main 패키지에서 검색을 한다.
 public class ProjectConfig {
@@ -166,7 +155,6 @@ public class ProjectConfig {
 
 ```java
 // registerBean() 메서드로 스프링 컨텍스트에 빈 추가하기
-
 import java.util.function.Supplier;
 
 public class Main {
@@ -185,7 +173,7 @@ public class Main {
 
 ## 2.3 요약
 
-- 스프링에서 가장 먼저 배워야할 것은 스프링 컨텍스트에 인스턴스를 추가하는 것이다.
+- 스프링에서 가장 먼저 배워야 할 것은 스프링 컨텍스트에 인스턴스를 추가하는 것이다.
 - 컨텍스트에 빈을 추가하는 방법은 세 가지다. @Bean 어노테이선, 스테레오타입 어노테이션, 프로그래밍 방식.
 - @Bean 어노테이션을 이용하면 어떤 종류의 인스턴스도 빈으로 추가할 수 있다.
 - 스테레오타입 어노테이션을 사용하면 특정 어노테이션이 있는 애플리케이션 클래스만을 위한 빈을 생성할 수 있다.
